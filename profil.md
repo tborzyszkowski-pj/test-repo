@@ -1,0 +1,1 @@
+Pracuję ze studentami na PJATK, wspierając ich w nauce i rozwoju.
