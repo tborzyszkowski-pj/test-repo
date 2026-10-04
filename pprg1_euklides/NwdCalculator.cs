@@ -1,3 +1,5 @@
+using System;
+
 public static class NwdCalculator
 {
     public static int Nwd(int a, int b)
@@ -13,5 +15,23 @@ public static class NwdCalculator
             b = reszta;
         }
         return a;
+    }
+
+    public static int Silnia(int n)
+    {
+        if (n < 0)
+        {
+            throw new ArgumentOutOfRangeException("Silnia nie jest zdefiniowana dla liczb ujemnych.");
+        }
+        if (n == 0 || n == 1)
+        {
+            return 1;
+        }
+        int wynik = 1;
+        for (int i = 2; i <= n; i++)
+        {
+            wynik *= i;
+        }
+        return wynik;
     }
 }
